@@ -1,0 +1,10 @@
+﻿剧库 红果版后端（1.0+2.0 · 仅红果）
+
+账号：admin
+密码：juku123456
+
+启动：
+  ./dist/juku_hongguo_linux_amd64 -listen 0.0.0.0:8998 -open=false -data-dir ./data -out ./downloads
+
+本版已内置「仅红果」：不拉黄果/黄豆。
+Docker / 完整版请用完整版仓库。
