@@ -1,0 +1,18 @@
+services:
+  # 红果版（仅红果，不含黄果/黄豆）
+  juku-hongguo:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: juku:hongguo
+    container_name: juku-hongguo
+    ports:
+      - "8999:8998"
+    volumes:
+      - ./data:/data
+      - ./downloads:/downloads
+    environment:
+      TZ: Asia/Shanghai
+      JUKU_HONGGUO_ONLY: "1"
+      JUKU_ADMIN_PASSWORD: ${JUKU_ADMIN_PASSWORD:-juku123456}
+    restart: unless-stopped

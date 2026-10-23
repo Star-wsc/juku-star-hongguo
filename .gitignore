@@ -1,0 +1,29 @@
+# os / ide
+.DS_Store
+.vscode/
+.idea/
+*.tmp
+node_modules/
+
+# runtime
+data/
+downloads/
+*.log
+juku
+juku.exe
+juku_hongguo
+*.exe~
+backend/data/
+backend/downloads/
+backend/bin/ffmpeg*
+backend/bin/ffprobe*
+deploy/data/
+deploy/downloads/
+/config.json
+/juku-settings.json
+/settings.json
+/library.json
+/ui-state.json
+/failed.json
+*.jks
+*.p12
